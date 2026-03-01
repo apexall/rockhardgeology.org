@@ -3,7 +3,7 @@ body {
   background-color: #122738;
     background-position: top;
     background-repeat: repeat-x;
-    background-image: url('sitepics/bg.png');
+    background-image: url('/bg.png');
     color: #445D6D;
 }
 a:link {
