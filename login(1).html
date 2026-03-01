@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rock Hard Geology Conglomerate — Login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Geology">
+  <style>
+    /* ── Reset ── */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    /* ── Body ── */
+    body {
+      background-color: #122738;
+      background-position: top;
+      background-repeat: repeat-x;
+      color: #445D6D;
+      font-family: Tahoma, Geneva, sans-serif;
+      min-height: 100vh;
+    }
+
+    /* ── Links ── */
+    a:link    { color: blue; }
+    a:visited { color: blue; }
+    a:hover   { color: #8a1c0f; }
+    a:active  { color: yellow; }
+
+    /* ── Nav ── */
+    nav {
+      width: 100%;
+      text-align: center;
+      padding: 0.6em 0;
+      font-size: 0.95em;
+      line-height: 150%;
+    }
+
+    /* ── Container ── */
+    div.container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 960px;
+      line-height: 150%;
+      text-align: center;
+      padding: 1em;
+    }
+
+    /* ── Content box ── */
+    div.content {
+      border: medium dotted black;
+      border-radius: 10px;
+      padding: 1em;
+      margin: 0 auto;
+      color: black;
+      background-color: #cccccc;
+      width: auto;
+    }
+
+    /* ── Login form ── */
+    .login-form {
+      width: 300px;
+      margin: 0 auto;
+      padding: 10px 0 20px;
+    }
+    .login-form h1 {
+      text-align: center;
+      color: #4d4d4d;
+      font-size: 1.5em;
+      padding: 20px 0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .login-form input[type="password"],
+    .login-form input[type="text"] {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #dddddd;
+      margin-bottom: 15px;
+      font-family: Tahoma, Geneva, sans-serif;
+      font-size: 0.95em;
+    }
+    .login-form input[type="submit"] {
+      width: 100%;
+      padding: 15px;
+      background-color: #535b63;
+      border: 0;
+      cursor: pointer;
+      font-weight: bold;
+      color: #ffffff;
+      font-family: Tahoma, Geneva, sans-serif;
+      font-size: 0.95em;
+    }
+    .login-form input[type="submit"]:hover {
+      background-color: #8a1c0f;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <nav>
+      <a href="index.html">home</a>
+      |
+      <a href="login.html">login</a>
+    </nav>
+    <div class="content">
+      <div class="login-form">
+        <h1>Login</h1>
+        <form action="auth" method="POST">
+          <input type="text" name="username" placeholder="Username" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
