@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rock Hard Geology Conglomerate — Members</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Geology — Meet our Members">
+  <style>
+    /* ── Reset ── */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    /* ── Body ── */
+    body {
+      background-color: #122738;
+      background-position: top;
+      background-repeat: repeat-x;
+      color: #445D6D;
+      font-family: Tahoma, Geneva, sans-serif;
+      min-height: 100vh;
+    }
+
+    /* ── Links ── */
+    a:link    { color: blue; }
+    a:visited { color: blue; }
+    a:hover   { color: #8a1c0f; }
+    a:active  { color: yellow; }
+
+    /* ── Container ── */
+    div.container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 960px;
+      line-height: 150%;
+      text-align: center;
+      padding: 1em;
+    }
+
+    /* ── Nav ── */
+    nav {
+      text-align: center;
+      padding: 0.6em 0;
+      font-size: 0.95em;
+      line-height: 150%;
+      margin-bottom: 0.5em;
+    }
+
+    /* ── Content box ── */
+    div.content {
+      border: medium dotted black;
+      border-radius: 10px;
+      padding: 1.5em;
+      margin: 0 auto;
+      color: black;
+      background-color: #cccccc;
+      width: auto;
+    }
+
+    /* ── Page heading ── */
+    div.content h1 {
+      text-align: center;
+      font-size: 1.8em;
+      text-decoration: underline;
+      color: black;
+      margin-bottom: 1.2em;
+    }
+
+    /* ── Members grid ── */
+    .members-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5em;
+      text-align: left;
+    }
+
+    /* ── Member card ── */
+    .member-card {
+      background-color: #e8e8e8;
+      border: 1px solid #aaaaaa;
+      border-radius: 8px;
+      padding: 1em;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .member-card:hover {
+      box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+    }
+
+    .member-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+      border: 1px solid #cccccc;
+      display: block;
+      margin-bottom: 0.75em;
+      background-color: #bbbbbb;
+    }
+
+    .member-card h2 {
+      font-size: 1em;
+      font-weight: bold;
+      text-decoration: none;
+      color: #222222;
+      margin-bottom: 0.2em;
+    }
+
+    .member-card .title {
+      font-size: 0.8em;
+      color: #666666;
+      font-style: italic;
+      margin-bottom: 0.6em;
+    }
+
+    .member-card p {
+      font-size: 0.85em;
+      color: #333333;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <nav>
+      <a href="index.html">home</a>
+      |
+      <a href="login.html">login</a>
+      |
+      <a href="members.html">members</a>
+    </nav>
+
+    <div class="content">
+      <h1>Our Members</h1>
+
+      <div class="members-grid">
+
+        <!-- Member 1 -->
+        <div class="member-card">
+          <img src="https://picsum.photos/seed/geo1/300/180" alt="Photo of Dr. Margaret Stonewell">
+          <h2>Dr. Margaret Stonewell</h2>
+          <div class="title">Founder &amp; Lead Petrologist</div>
+          <p>Margaret has spent over 25 years mapping igneous formations across the Pacific Northwest. Her landmark study on basalt column formation in Oregon earned her the Geological Society's Merit Award in 2009. She founded the Conglomerate after a chance discovery of rare blue schist in her own backyard.</p>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="member-card">
+          <img src="https://picsum.photos/seed/geo2/300/180" alt="Photo of Clifford Sanderson">
+          <h2>Clifford Sanderson</h2>
+          <div class="title">Sedimentary Specialist</div>
+          <p>Cliff is a self-taught rockhound who turned a childhood hobby into a second career. He maintains an impressive personal collection of over 3,000 labeled sedimentary specimens and leads the group's annual field trip to the Colorado Plateau. He is also the club newsletter editor.</p>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="member-card">
+          <img src="https://picsum.photos/seed/geo3/300/180" alt="Photo of Dr. Yuki Feldspar">
+          <h2>Dr. Yuki Feldspar</h2>
+          <div class="title">Mineralogist &amp; Outreach Coordinator</div>
+          <p>Yuki holds a doctorate in mineralogy from the University of Arizona and has a particular passion for fluorescent minerals. She runs the Conglomerate's school outreach program, bringing rock and mineral kits to classrooms across the county every spring and fall semester.</p>
+        </div>
+
+        <!-- Member 4 -->
+        <div class="member-card">
+          <img src="https://picsum.photos/seed/geo4/300/180" alt="Photo of Roderick Quartzman">
+          <h2>Roderick Quartzman</h2>
+          <div class="title">Amateur Palaeontologist</div>
+          <p>Rod retired from civil engineering in 2015 and has been hunting fossils ever since. He has a knack for spotting ammonite impressions in roadside cuttings that others walk right past. His most prized find is a near-complete trilobite recovered from a limestone outcrop in eastern Nevada.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
