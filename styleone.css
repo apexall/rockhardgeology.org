@@ -43,7 +43,7 @@ div.content {
   -moz-border-radius-bottomleft: 10px;
   color: black;
   background-color: #CCCCCC;
-  width: 52em;
+  width: auto;
   height: auto;
   margin-right: auto;
 }
